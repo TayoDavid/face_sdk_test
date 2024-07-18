@@ -1,7 +1,6 @@
-package com.face_sdk_test
+package newlib.example
 
 import android.app.Application
-import com.daonsdkreactnative.DaonSdkReactNativePackage
 import com.facebook.react.PackageList
 import com.facebook.react.ReactApplication
 import com.facebook.react.ReactHost
@@ -20,11 +19,7 @@ class MainApplication : Application(), ReactApplication {
             PackageList(this).packages.apply {
               // Packages that cannot be autolinked yet can be added manually here, for example:
               // add(MyReactNativePackage())
-              add(DaonSdkReactNativePackage())
             }
-
-
-
 
         override fun getJSMainModuleName(): String = "index"
 
@@ -36,8 +31,6 @@ class MainApplication : Application(), ReactApplication {
 
   override val reactHost: ReactHost
     get() = getDefaultReactHost(applicationContext, reactNativeHost)
-
-
 
   override fun onCreate() {
     super.onCreate()
