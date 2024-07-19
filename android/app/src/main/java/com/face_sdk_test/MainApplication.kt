@@ -1,4 +1,4 @@
-package com.face_sdk_test
+package com.daon.face_sdk_test
 
 import android.app.Application
 import com.daonsdkreactnative.DaonSdkReactNativePackage
@@ -20,11 +20,8 @@ class MainApplication : Application(), ReactApplication {
             PackageList(this).packages.apply {
               // Packages that cannot be autolinked yet can be added manually here, for example:
               // add(MyReactNativePackage())
-              add(DaonSdkReactNativePackage())
+//              add(DaonSdkReactNativePackage())
             }
-
-
-
 
         override fun getJSMainModuleName(): String = "index"
 

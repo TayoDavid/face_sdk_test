@@ -1,4 +1,4 @@
-package com.face_sdk_test
+package com.daon.face_sdk_test
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
