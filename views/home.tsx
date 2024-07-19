@@ -20,7 +20,7 @@ export const Home = ({navigation}) => {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
   return (
-    <SafeAreaView style={backgroundStyle}>
+    <SafeAreaView style={[backgroundStyle, {margin: 20}]}>
       <View>
         <StatusBar
           barStyle={isDarkMode ? 'light-content' : 'dark-content'}
@@ -34,7 +34,9 @@ export const Home = ({navigation}) => {
             );
             navigation.navigate('CameraScreen');
           }}>
-          <Text style={{fontSize: 18, color: 'white'}}>Start Camera</Text>
+          <Text style={{fontSize: 18, color: 'white', padding: 16}}>
+            Start Camera
+          </Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
